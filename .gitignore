@@ -1,0 +1,13 @@
+# --- PHP / Composer ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.bak
