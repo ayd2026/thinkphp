@@ -1,7 +1,6 @@
 .git
 .gitignore
 .dockerignore
-.ci/
 .github
 README.md
 docs/
