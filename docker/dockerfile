@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /thinkphp
 COPY . .
 COPY /docker/unit.json /var/lib/unit/conf.json
-COPY /docker/services /etc/service
+COPY /docker/services/unitd /etc/service
 RUN chown -R unit:unit /thinkphp /var/lib/unit && \
     chmod -R 755 /thinkphp /var/lib/unit && rm -rf docker
 
