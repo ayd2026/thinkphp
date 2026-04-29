@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo -u  unit php think xadmin:queue start
