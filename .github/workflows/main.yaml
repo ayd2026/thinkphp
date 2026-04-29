@@ -39,7 +39,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            web
+            admin
 
       - name: Build and push
         uses: docker/build-push-action@v6
