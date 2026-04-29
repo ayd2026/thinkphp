@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && curl https://unit.nginx.org/keys/nginx-keyring.gpg > /usr/share/keyrings/nginx.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/nginx.gpg] https://packages.nginx.org/unit/debian/ $(lsb_release -cs) unit" > /etc/apt/sources.list.d/unit.list \
     && apt-get update && apt-get install -y --no-install-recommends \
-    procps sudo unit unit-php libphp7.4-embed php7.4-cli php7.4-common php7.4-pdo php7.4-redis \
+    procps unit unit-php libphp7.4-embed php7.4-cli php7.4-common php7.4-pdo php7.4-redis \
     php7.4-gd php7.4-mysql php7.4-mbstring php7.4-xml php7.4-curl php7.4-zip php7.4-bcmath runit \
     && rm -rf /var/lib/apt/lists/* && apt-get clean && apt-get autoremove -y
 
